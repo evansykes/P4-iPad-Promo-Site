@@ -1,0 +1,24 @@
+/* CSS snippet: Written by Chris Converse for lynda.com  */
+
+h1 { margin: 15px 0px 12px 0px; font-weight: normal; font-family: Georgia; font-size: 48px; color: #489602; line-height: 50px; }
+h2 { margin: 0px 0px .5em 0px; font-family: Georgia; font-size: 24px; color: #155102; }
+h3 { font-size: 1.2em; margin: 0px 0px 0px 0px; color: #155102; }
+p,ul { margin: 0px 0px 1.5em 0px; line-height: 22px; color: #3d2701; }
+a { color: #900; }
+.clear { clear: both; line-height: 1px; }
+
+
+/* Page-specific Styles */
+.home_content h1 { margin: 20px 0px 30px 0px; font-weight: normal; font-family: Georgia; font-size: 60px; color: #489602; line-height: 50px; }
+.home_content h2 { margin: 0px 0px .5em 0px; font-family: Georgia; font-size: 32px; color: #155102; }
+
+
+/* Orientation-specific Layout - Landscape */
+.page.landscape .home_content { width: 410px; }
+.page.landscape .video_graphic { position: absolute; right: 0px; top: 150px; }
+
+
+/* Orientation-specific Layout - Portrait */
+.page.portrait .home_content { width: 700px; }
+.page.portrait .video_graphic { position: absolute; right: 0px; top: 470px; }
+

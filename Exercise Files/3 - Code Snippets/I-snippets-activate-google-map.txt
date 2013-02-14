@@ -1,0 +1,27 @@
+## HTML and JavaScript Snippets: Written by Chris Converse for lynda.com
+
+
+___Snippet for head area of HTML file______________
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.3&sensor=false"></script>
+
+
+
+___Snippet for JavaScript file______________
+
+function startMap(){
+    var latlng = new google.maps.LatLng(34.38576009017598, -119.48599576950073); 
+    var myOptions = {zoom: 16, center: latlng, mapTypeId: google.maps.MapTypeId.ROADMAP}; 
+    var map = new google.maps.Map(document.getElementById('map_canvas'),myOptions); 
+    var marker = new google.maps.Marker({
+        position: latlng, 
+        map: map,
+        title:"Office Location"
+    }); 
+}
+
+
+__Getting Lat./Long. from Google Maps_____
+
+javascript:void(prompt('',gApplication.getMap().getCenter()));
+

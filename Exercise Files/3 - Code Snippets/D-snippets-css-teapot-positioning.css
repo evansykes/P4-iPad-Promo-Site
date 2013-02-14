@@ -1,0 +1,8 @@
+/* CSS snippet: Written by Chris Converse for lynda.com  */
+
+.teapot_orange, .teapot_clay, .teapot_blue, .teapot_black  { -webkit-transition: -webkit-transform 1s ease-in-out; }
+
+.teapot_orange { position: absolute; -webkit-transform: translate3d(345px,1024px,0px); }
+.teapot_clay   { position: absolute; -webkit-transform: translate3d(-250px,140px,0px); }
+.teapot_blue   { position: absolute; -webkit-transform: translate3d(800px,-200px,0px); }
+.teapot_black  { position: absolute; -webkit-transform: translate3d(1200px,258px,0px); }
