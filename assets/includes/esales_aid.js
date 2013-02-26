@@ -22,9 +22,9 @@ $(document).ready(function() {
 
 function changePage(fileName){
 	
-	$('.content_container').animate({opacity:0}, 500, function(){
+	$('.content_container').animate({opacity:1}, 500, function(){
 		$('content_loading_container').load('assets/content/'+fileName, function(){
-			$('.content_container').delay(250).animate({opacity:1}, 500);
+			$('.content_container').delay(250).animate({opacity:0}, 500);
 		});
 		if(fileName == 'index.html$v=1' ){
 			$('.page').addClass('home');

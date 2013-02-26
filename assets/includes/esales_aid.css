@@ -7,12 +7,12 @@ body { margin: 0px; padding: 0px; font-family: Helvetica; font-size: 16px; backg
 
 /* Global Layout */
 
-header  { display: block; position: absolute; top: 0px; left: 0px; height: 70px; background: url(../images/template/background_banner.jpg?v=1) no-repeat 0px 0px; -webkit-box-shadow: 0px 5px 4px rgba(28,84,0,0.15); box-shadow: 0px 5px 4px rgba(28,84,0,0.15); }
-article { display: block; position: absolute; top: 70px; left: 0px; background: url(../images/template/background_content.jpg?v=1) repeat-x 0px 0px; }
+header  { display: block; position: absolute; top: 0px; left: 0px; width:300px; height: 300px; background-color:rgba(255,255,255,.5); -webkit-box-shadow: 0px 5px 4px rgba(28,84,0,0.15); box-shadow: 0px 5px 4px rgba(28,84,0,0.15); }
+article { display: block; position: absolute; top: 40px; left: 0px; }
 article .content_container { position: absolute; top: 0px; left: 0px; background: none; }
-article .content_container .content_loading_container { position: absolute; top: 0px; padding: 40px 20px 0px 40px; }
-footer  { display: block; position: absolute; bottom: 0px; left: 0px; height: 60px; background-color: #fff; }
-nav { position: absolute; bottom: 18px; left: 25px; }
+article .content_container .content_loading_container { position: absolute; top: 0px; /* padding: 40px 20px 0px 40px; */}
+footer  { display: block; position: absolute; bottom: 0px; eight: 0px; height: 60px; background-color:rgba(255,255,255,1); }
+nav { position: absolute; bottom: 18px; right: 25px; }
 
 
 /* Page-specific Style and Layout */
@@ -21,16 +21,19 @@ nav { position: absolute; bottom: 18px; left: 25px; }
 
 /* Orientation-specific Layout - Landscape */
 .page.landscape  { position: relative; width: 1024px; height: 748px; overflow: hidden; }
-.page.landscape header  { width: 1024px; }
+.page.landscape header  { width: 300px; }
 .page.landscape article { width: 1024px; height: 618px; }
 .page.landscape footer  { width: 1024px; }
+
+.page.landscape .sidebar {position:relative; width:300px; height:618px; margin-right:20px; background-color:rgba(255,255,255,.5);}
+.page.landscape .content {position:relative; width:724px; height:618px; float:left; background-color:rgba(255,255,255,.5);}
 
 .page.landscape article .content_container { width: 1024px; height: 618px; }
 
 
 /* Orientation-specific Layout - Portrait */
 .page.portrait { position: relative; width: 768px; height: 1004px; overflow: hidden; }
-.page.portrait header  { width: 768px; }
+.page.portrait header  { width: 300px; }
 .page.portrait article { width: 768px; height: 874px; }
 .page.portrait footer  { width: 768px; }
 
@@ -38,13 +41,13 @@ nav { position: absolute; bottom: 18px; left: 25px; }
 
 .logostack {
   position:relative;
-  height:480px;
-  width:480px;
+  height:300px;
+  width:300px;
   margin:0 auto;
   
 }
 
-.logo {position: absolute; top:0; left:0;}
+.logo {position: absolute; top:0; left:0; width:300px;}
 
 
 
@@ -55,6 +58,7 @@ transition: opacity 1.5s ease-in-out;
 }
 
 nav a {
+
 padding: 15px 15px 15px 59px;
 background: url(../images/template/icon.png?v=1) no-repeat;
 background-size: 49px;
