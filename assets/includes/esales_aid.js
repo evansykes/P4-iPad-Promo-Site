@@ -1,3 +1,13 @@
+// begin iScroll
+var myScroll;
+function loaded() {
+	myScroll = new iScroll('scroll',{checkDOMChanges:true});
+}
+document.addEventListener('DOMContentLoaded', loaded, false);
+
+document.addEventListener('touchmove', function(e){ e.preventDefault(); }, false);
+// end iScroll
+
 /*  JavaScript Document                      */
 
 $(document).ready(function() {

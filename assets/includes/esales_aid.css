@@ -4,6 +4,12 @@
 /* Global Styles */
 body { margin: 0px; padding: 0px; font-family: Helvetica; font-size: 16px; background: url(../images/template/bgtile.jpg?v=1);}
 
+h1 { margin: 15px 0px 12px 0px; font-weight: normal; font-family: Georgia; font-size: 48px; color: #489602; line-height: 50px; }
+h2 { margin: 0px 0px .5em 0px; font-family: Georgia; font-size: 24px; color: #155102; }
+h3 { font-size: 1.2em; margin: 0px 0px 0px 0px; color: #155102; }
+p,ul { margin: 0px 0px 1.5em 0px; line-height: 22px; color: #3d2701; }
+a { color: #900; }
+.clear { clear: both; line-height: 1px; }
 
 /* Global Layout */
 
@@ -17,6 +23,8 @@ nav { position: absolute; bottom: 18px; right: 25px; }
 
 /* Page-specific Style and Layout */
 .page.home article .content_container { background: url(../images/template/background_content_home.jpg?v=1) no-repeat 0px 0px; }
+.home_content h1 { margin: 20px 0px 30px 0px; font-weight: normal; font-family: Georgia; font-size: 60px; color: #489602; line-height: 50px; }
+.home_content h2 { margin: 0px 0px .5em 0px; font-family: Georgia; font-size: 32px; color: #155102; }
 
 
 /* Orientation-specific Layout - Landscape */
@@ -24,9 +32,11 @@ nav { position: absolute; bottom: 18px; right: 25px; }
 .page.landscape header  { width: 300px; }
 .page.landscape article { width: 1024px; height: 618px; }
 .page.landscape footer  { width: 1024px; }
+.page.landscape .home_content { width: 410px; }
+.page.landscape .video_graphic { position: absolute; right: 0px; top: 150px; }
 
-.page.landscape .sidebar {position:relative; width:300px; height:618px; margin-right:20px; background-color:rgba(255,255,255,.5);}
-.page.landscape .content {position:relative; width:724px; height:618px; float:left; background-color:rgba(255,255,255,.5);}
+.page.landscape .sidebar {position:relative; width:260px; top: 300px; margin-right:20px; padding:20px; background-color:rgba(255,255,255,.75);}
+.page.landscape .content {position:relative; float:right; width:704px; height:618px; margin-left:20px;  background-color:rgba(255,255,255,.5);}
 
 .page.landscape article .content_container { width: 1024px; height: 618px; }
 
@@ -36,6 +46,9 @@ nav { position: absolute; bottom: 18px; right: 25px; }
 .page.portrait header  { width: 300px; }
 .page.portrait article { width: 768px; height: 874px; }
 .page.portrait footer  { width: 768px; }
+.page.portrait .home_content { width: 700px; }
+.page.portrait .video_graphic { position: absolute; right: 0px; top: 470px; }
+
 
 .page.portrait article .content_container { width: 768px; height: 874px; }
 
