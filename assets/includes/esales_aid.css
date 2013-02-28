@@ -13,27 +13,28 @@ a { color: #900; }
 
 /* Global Layout */
 
-header  { display: block; position: absolute; top: 0px; left: 0px; width:300px; height: 300px; background-color:rgba(255,255,255,.5); -webkit-box-shadow: 0px 5px 4px rgba(28,84,0,0.15); box-shadow: 0px 5px 4px rgba(28,84,0,0.15); }
-article { display: block; position: absolute; top: 40px; left: 0px; }
-article .content_container { position: absolute; top: 0px; left: 0px; background: none; }
-article .content_container .content_loading_container { position: absolute; top: 0px; /* padding: 40px 20px 0px 40px; */}
-footer  { display: block; position: absolute; bottom: 0px; eight: 0px; height: 60px; background-color:rgba(255,255,255,1); }
-nav { position: absolute; bottom: 18px; right: 25px; }
-
+header  { display: block; position: absolute; width:300px; height: 300px; background-color:rgba(255,255,255,.5); -webkit-box-shadow: 0px 5px 4px rgba(28,84,0,0.15); box-shadow: 0px 5px 4px rgba(28,84,0,0.15); }
+article { display: block; position: absolute;	 top: 0px; left: 0px; }
+/*article .content_container { position: absolute; top: 0px; left: 0px; background: none; }
+article .content_container .content_loading_container { position: absolute; top: 0px; }
+footer  {display: block; position: absolute;	 bottom: 0px; right: 0px; height: 60px; background-color:rgba(255,255,255,1); }
+nav {position: absolute; bottom: 18px; right: 25px; }
+*/
 
 /* Page-specific Style and Layout */
-.page.home article .content_container { background: url(../images/template/background_content_home.jpg?v=1) no-repeat 0px 0px; }
+/*.page.home article .content_container { background: url(../images/template/background_content_home.jpg?v=1) no-repeat 0px 0px; }
 .home_content h1 { margin: 20px 0px 30px 0px; font-weight: normal; font-family: Georgia; font-size: 60px; color: #489602; line-height: 50px; }
 .home_content h2 { margin: 0px 0px .5em 0px; font-family: Georgia; font-size: 32px; color: #155102; }
-
+*/
 
 /* Orientation-specific Layout - Landscape */
+.page.landscape header { top: 0px; left: 0px;}
 .page.landscape  { position: relative; width: 1024px; height: 748px; overflow: hidden; }
 .page.landscape header  { width: 300px; }
 .page.landscape article { width: 1024px; height: 618px; }
 .page.landscape footer  { width: 1024px; }
-.page.landscape .home_content { width: 410px; }
-.page.landscape .video_graphic { position: absolute; right: 0px; top: 150px; }
+/*.page.landscape .home_content { width: 410px; }
+.page.landscape .video_graphic { position: absolute; right: 0px; top: 150px; }*/
 
 .page.landscape .sidebar {position:relative; width:260px; top: 300px; margin-right:20px; padding:20px; background-color:rgba(255,255,255,.75);}
 .page.landscape .content {position:relative; float:right; width:704px; height:618px; margin-left:20px;  background-color:rgba(255,255,255,.5);}
@@ -41,9 +42,9 @@ nav { position: absolute; bottom: 18px; right: 25px; }
 .page.landscape article .content_container { width: 1024px; height: 618px; }
 
 
-/* Orientation-specific Layout - Portrait */
+/* Orientation-specific Layout - Portrait 
 .page.portrait { position: relative; width: 768px; height: 1004px; overflow: hidden; }
-.page.portrait header  { width: 300px; }
+.page.portrait header  { width: 300px; bottom:0; left:0; display:block;}
 .page.portrait article { width: 768px; height: 874px; }
 .page.portrait footer  { width: 768px; }
 .page.portrait .home_content { width: 700px; }
@@ -51,16 +52,54 @@ nav { position: absolute; bottom: 18px; right: 25px; }
 
 
 .page.portrait article .content_container { width: 768px; height: 874px; }
+*/
+.page.portrait header  { bottom: 0px; left: 0px;}
+
 
 .logostack {
   position:relative;
   height:300px;
   width:300px;
-  margin:0 auto;
+  
   
 }
+/*logo keyframe animation*/
+.logo.animate {
+	animation-name: logo;
+	animation-duration: 5s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;	
+	animation-direction: normal;
+	animation-delay: 0;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+}
 
-.logo {position: absolute; top:0; left:0; width:300px;}
+@keyframes logo {
+
+	0% {
+		opacity: 0;
+		
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	75% {
+		opacity: 1;
+		
+	}
+	
+	100% {
+		opacity: 0;
+		
+	}
+
+}
+
+
+.logo {position: absolute; width:300px;}
 
 
 

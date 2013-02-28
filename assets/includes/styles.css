@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Global Styles */
+body { 
+	font-family: Helvetica; 
+	font-size: 16px;
+	margin: 0px; 
+	padding: 0px;	
+}
+
+.page {
+	background: url(../images/template/bgtile.jpg?v=1);
+}
+
+footer {
+	background-color: rgba(255,255,255,.75);
+	position: absolute;
+	height:30px; 
+	margin:auto;
+	padding-top; 13px;
+	padding-bottom: 20px;
+	width:100%;
+	bottom:0;
+	left:0;
+}
+
+.logo {position: absolute; width:300px;}
+
+header  { 
+display: block; 
+position: absolute; 
+width:306px; 
+height: 290px; 
+top: 0px; left: 0px;
+background-color:rgba(255,255,255,.5); 
+box-shadow: 0px 5px 4px rgba(28,84,0,0.15);
+-webkit-box-shadow: 0px 5px 4px rgba(28,84,0,0.15);
+ }
+
+nav {position: absolute; bottom: 17px; right: 5px; }
+
+nav a {
+
+padding: 15px 15px 15px 59px;
+background: url(../images/template/icon.png?v=1) no-repeat;
+background-size: 49px;
+border-radius: 3px;
+-webkit-box-shadow: 0px -3px 3px rgba(28,84,0,0.25);
+box-shadow: 0px -3px 3px rgba(28,84,0,0.25);
+background-color: rgba(255,20,22,33.8);
+}
+nav a.selected { -webkit-box-shadow: 0px -3px 3px rgba(28,84,0,0.25);
+box-shadow: 0px 0px -3px rgba(28,84,0,0.75);
+background-color: rgba(255,255,255,1)}
+
+.sidebar {
+	background-color:rgba(255,255,255,.5); 
+	padding: 10px;
+}
+
+/* Portrait layout styles */
+.page.portrait { 
+	height: 1004px; 
+	overflow: hidden;
+	position: relative; 
+	width: 768px; 
+}
+
+/*.page.portrait header  { 
+	
+	bottom: 0px; left: 0px;
+	
+	
+	}
+*/
+/*.page.portrait footer {
+	margin-left:306px;
+}
+*/
+
+.page.portrait .sidebar {
+
+margin-left: 306px;
+height: 270px;
+width: 388px;
+}
+
+/* Landscape layout styles */
+
+.page.landscape  
+{ 
+	height: 748px; 
+	overflow: hidden;
+	position: relative; 
+	width: 1024px; 
+}
+
+.page.landscape header  { 
+	
+	
+
+	}
+.page.landscape .sidebar {
+	/*position: absolute;*/
+	margin-top: 306px;	
+	width:286px;
+	height:286px;
+	
+}
+
+/*logo keyframe animation*/
+.flicker {
+	-animation: logo 6s infinite;
+	-webkit-animation: logo 6s infinite;
+	-moz-animation: logo 6s infinite;
+	
+}
+
+@keyframes logo {
+
+	0% {
+		opacity: 1;
+		
+	}
+
+	
+	75% {
+		opacity: 0;
+		
+	}
+	
+	100% {
+		opacity: 1;
+		
+	}
+
+}
+
+@-webkit-keyframes logo {
+
+	0% {
+		opacity: 1;
+		
+	}
+	
+	
+	75% {
+		opacity: 0;
+		
+	}
+	
+	100% {
+		opacity: 1;
+		
+	}
+
+}
+
+@-moz-keyframes logo {
+
+	0% {
+		opacity: 1;
+		
+	}
+	
+
+	
+	75% {
+		opacity: 0;
+		
+	}
+	
+	100% {
+		opacity: 1;
+		
+	}
+
+}
