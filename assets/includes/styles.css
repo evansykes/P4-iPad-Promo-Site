@@ -95,7 +95,7 @@ width: 388px;
 .page.portrait #dish {
 width: 647px;
 bottom: 200px;
-right: 100px;
+right: 99px;
 position: absolute;
 -webkit-transform: translate3d(-25px,140px,120px);
 }
