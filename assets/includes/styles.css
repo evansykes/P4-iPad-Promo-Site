@@ -59,6 +59,10 @@ background-color: rgba(255,255,255,1)}
 	padding: 10px;
 }
 
+/*dish animations*/
+#dish { -webkit-transition: -webkit-transform 1s ease-in-out; }
+
+
 /* Portrait layout styles */
 .page.portrait { 
 	height: 1004px; 
@@ -86,6 +90,16 @@ height: 270px;
 width: 388px;
 }
 
+/*dish in portrait background*/
+
+.page.portrait #dish {
+width: 647px;
+bottom: 200px;
+right: 100px;
+position: absolute;
+-webkit-transform: translate3d(-25px,140px,120px);
+}
+
 /* Landscape layout styles */
 
 .page.landscape  
@@ -107,6 +121,17 @@ width: 388px;
 	width:286px;
 	height:286px;
 	
+}
+
+
+/*dish in landscape background*/
+
+.page.landscape #dish {
+width: 647px;
+top: 0;
+right: 0;
+position: absolute;
+-webkit-transform: translate3d(-5px,40px,20px);
 }
 
 /*logo keyframe animation*/
